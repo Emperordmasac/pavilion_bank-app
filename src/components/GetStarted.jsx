@@ -13,6 +13,7 @@ const GetStarted = () => (
           <span className="text-gradient">Get</span>
         </p>
         <img
+          loading="lazy"
           src={arrowUp}
           alt="arrow-up"
           className="w-[23px] h-[23px] object-contain"

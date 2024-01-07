@@ -8,6 +8,7 @@ const Footer = () => {
       <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
         <div className="flex-1 flex flex-col justify-start mr-10">
           <img
+            loading="lazy"
             src={logo}
             alt="hookbank"
             className="w-[266px] h-[72px] object-contain"
@@ -48,6 +49,7 @@ const Footer = () => {
         <div className="flex flex-row md:mt-0 mt-6">
           {socialMedia.map((social, index) => (
             <img
+              loading="lazy"
               key={social.id}
               src={social.icon}
               alt={social.id}

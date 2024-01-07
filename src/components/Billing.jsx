@@ -6,6 +6,7 @@ const Billing = () => {
     <section id="product" className={layout.sectionReverse}>
       <div className={layout.sectionImgReverse}>
         <img
+          loading="lazy"
           src={bill}
           alt="billing"
           className="w-[100%] h-[100%] relative z-[5]"
@@ -27,11 +28,13 @@ const Billing = () => {
 
         <div className="flex flex-wrap flex-row sm:mt-10 mt-6">
           <img
+            loading="lazy"
             src={apple}
             alt="apple store"
             className="w-[128px] h-[42px] object-contain mr-5 cursor-pointer"
           />
           <img
+            loading="lazy"
             src={google}
             alt="google store"
             className="w-[128px] h-[42px] object-contain cursor-pointer"

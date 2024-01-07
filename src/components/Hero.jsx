@@ -14,7 +14,7 @@ const Hero = () => {
         <div
           className={`flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2`}
         >
-          <img src={discount} className="w-[32px] h-[32px]" />
+          <img loading="lazy" src={discount} className="w-[32px] h-[32px]" />
           <p className={`${styles.paragraph} ml-2`}>
             <span className="text-white">20%</span> Discount For{" "}
             <span className="text-white">1 Month</span> Account
@@ -45,6 +45,7 @@ const Hero = () => {
         className={`flex flex-1 ${styles.flexCenter} md:my-0 my-10 relative`}
       >
         <img
+          loading="lazy"
           src={robot}
           alt="billing"
           className="w-[100%] h-[100%] relative z-[5]"

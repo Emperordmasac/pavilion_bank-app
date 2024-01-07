@@ -8,7 +8,12 @@ const Navbar = () => {
 
   return (
     <nav className="w-full flex justify-between items-center py-6 navbar">
-      <img src={logo} alt="hookbank" className="w-[124px] h-[32px]" />
+      <img
+        loading="lazy"
+        src={logo}
+        alt="hookbank"
+        className="w-[124px] h-[32px]"
+      />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map(({ id, title }, idx) => (
@@ -25,6 +30,7 @@ const Navbar = () => {
 
       <div className="sm:hidden flex flex-1 justify-end items-center">
         <img
+          loading="lazy"
           src={isMenuOpen ? close : menu}
           alt="menu"
           className="w-[28px] h-[28px] object-contain cursor-pointer"
